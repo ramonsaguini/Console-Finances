@@ -86,3 +86,14 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+
+
+
+
+
+console.log("Total Months: " + finances.length);
+console.log("Total:" + );
+console.log("Average Change: " + );
+console.log("Greateste Increase in Profits/Losses: " + );
+console.log("Greateste Decrease in Profits/Losses: " + );
+
