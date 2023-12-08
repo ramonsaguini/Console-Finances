@@ -1,3 +1,4 @@
+//* /////////// Array
 var finances = [
   ['Jan-2010', 867884],
   ['Feb-2010', 984655],
@@ -87,33 +88,25 @@ var finances = [
   ['Feb-2017', 671099],
 ];
 
-/*
 //! ////////////////// Total Months
-console.log("Total Months: " + finances.length);
-
+let totMonths = finances.length;
+console.log("Total Months: " + totMonths);
 
 //? //////////////// Total value
 var sum = 0;
-
 for (var i = 0; i < finances.length; i++) {
   sum += finances[i][1];
 }
 console.log("Total: $" + sum);
 
-
 //* /////////// Average calc
-console.log("Average Change: $" + (sum / finances.length).toFixed(2));
-*/
+let avg = sum / (finances.length - 1)
+console.log("Average Change: $" + avg.toFixed(2));
 
-////////////////! Greatest value
-finances.sort((a, b) => b[1] - a[1]);
+////////////////! Greatest Increase value
+let incValue = finances.sort((a, b) => b[1] - a[1]);
+console.log(`Greatest Increase in Profits/Losses: ${incValue[0][0]} ($${incValue[0][1]})`);
 
-console.log("Greatest Increase in Profits/Losses: ", finances[0]);
-
-
-// console.log("Greateste Decrease in Profits/Losses: " + );
-
-finances.sort((a, b) => a[1] - b[1]);
-
-console.log("Greatest Decrease in Profits/Losses: ", finances[0]);
-
+//* /////////// Greatest Decrease value
+let decValue = finances.sort((a, b) => a[1] - b[1]);
+console.log(`Greatest Decrease in Profits/Losses: ${decValue[0][0]} ($${decValue[0][1]})`);
