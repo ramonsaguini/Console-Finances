@@ -87,13 +87,29 @@ var finances = [
   ['Feb-2017', 671099],
 ];
 
-
-
-
-
+/*
+//! ////////////////// Total Months
 console.log("Total Months: " + finances.length);
-console.log("Total:" + );
-console.log("Average Change: " + );
-console.log("Greateste Increase in Profits/Losses: " + );
-console.log("Greateste Decrease in Profits/Losses: " + );
+
+
+//? //////////////// Total value
+var sum = 0;
+
+for (var i = 0; i < finances.length; i++) {
+  sum += finances[i][1];
+}
+console.log("Total: $" + sum);
+
+
+//* /////////// Average calc
+console.log("Average Change: $" + (sum / finances.length).toFixed(2));
+*/
+
+////////////////! Greatest value
+
+
+
+// console.log("Greatest Increase in Profits/Losses: " + );
+
+// console.log("Greateste Decrease in Profits/Losses: " + );
 
